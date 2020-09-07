@@ -1,0 +1,194 @@
+:root{
+  --color-primary-bold: rgb(0, 0, 0);
+  --color-primary: #404040;
+  --color-whitey: #7f7f7f;
+  --color-secondary: #bfbfbf;
+  --color-secondary-light: #ffffff;
+
+  --color-primary-sub:rgb(0, 0, 0);
+  --color-dark: #404040;
+  --color-darker: #7f7f7f;
+  --color-light: #bfbfbf;
+  --color-lighter: #ffffff;
+
+  --color-paragraph-primary:#ffffff;
+  --color-button-primary: #7f7f7f;
+}
+.content section, footer{
+  min-height: 100vh;
+  height:auto;
+  background-color:var(--color-light);
+  width:100vw;
+  max-width: 100%;
+  
+  z-index:1;
+  color: var(--color-paragraph-primary);
+  display:inline-block;
+}
+
+.quick-summary section, .education section, .contact-me section{
+  min-height: 45vh;
+  
+}
+.why-work-with-me section{
+  min-height: 60vh;
+}
+.about-me{
+  margin-bottom: 0;
+  position: relative;
+}
+.project section, .quick-summary section,.why-work-with-me section, .about-me, .landing section{
+  background-color:var(--color-primary-sub);
+}
+.education section, .skill section, .contact-me section{
+  background-color:var(--color-darker);
+}
+.project section, .why-work-with-me section, .skill section, .landing section{
+  text-align: center;
+}
+
+.about-me>div{
+  padding-left:20px;
+  padding-top:40px;
+}
+.about-me a{
+  color: var(--color-button-primary);
+}
+
+
+button{
+  height: 40px;
+  width: auto;
+  padding: 0 10px;
+  border:0;
+  border-radius: 3px;
+  background-color: var(--color-button-primary);
+  color: rgb(240, 240, 240);
+  margin:5px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgb(186, 193, 204);
+  color: rgb(223, 82, 0);
+  font-size: 14px;
+}
+.quick-summary button{
+  width:47%;
+}
+
+.bottomOfDiv{
+  bottom:5px;
+  position:absolute;
+  left:45vw;
+  text-align: center;
+  z-Index:4;
+}
+#bottomDivForText{
+  left:45vw;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 3px;
+}
+p{
+  color: var(--color-paragraph-primary);
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.app-body{
+  width: 100%;
+  height: 100%;
+}
+
+.rightImage{
+  padding: 0 20px;
+  width: 30vw;
+   height: auto;
+}
+.flex-container{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project .flex-container{
+  justify-content: center;
+}
+.quick-summary .flex-container{
+  height: 360px;
+}
+.education .flex-container{
+  height: 200px;
+}
+
+hr{
+height:1px;
+width: 50%;
+border-width:0;
+background-color:#bfbfbf;
+}
+.skill hr, .project hr, .why-work-with-me hr, .education hr, .quick-summary hr, .contact-me hr, .about-me hr{
+  width: 10%;
+}
+.quick-summary hr, .education hr, .contact-me hr, .about-me hr{
+  visibility: hidden;
+}
+#left-about-me{
+  width:50vw;
+}
+
+
+@media(max-width: 760px){
+  #bottomDivForText{
+    left:35%;
+  }
+  .quick-summary button{
+    width:auto;
+  }
+  .rightImage{
+    display: none;
+  }
+  .why-work-with-me section, .about-me{
+    min-height: 120vh;
+  }
+  
+  
+}
+
+@media(max-width: 420px){
+  .quick-summary hr, .education hr, .contact-me hr, .about-me hr{
+    visibility: visible;
+  }
+  div{
+    padding: 0 !important;
+  }
+  h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  p{
+    font-size: 12px;
+    text-align: center;
+  }
+  .contact-me .flex-container{
+    display: block;
+  }
+  .contact-buttons{
+    text-align: center;
+  }
+  .about-me{
+    text-align: center;
+  }
+  #left-about-me{
+    width:100vw;
+  }
+}
+
+@media(max-width: 400px){
+  #bottomDivForText{
+    left:25%;
+  }
+}
