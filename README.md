@@ -3,8 +3,7 @@
 Personal portfolio built with Reactjs. Site is build with attempt to make changing personal information become as least cumbersome as possible.
 
 ## Motivation
-Highly motivated to create this portfolio after checkout the portfolio of Alan Aya. His portfolio is bery professional, with slick color scheme, responsive design and informative. I "stole" most of his design and revamped it to suit my need. I still created everything from scratch with React though. It's like a famous artist once said: 
->Good artist borrows, great artist steals
+Highly motivated to create this portfolio after checkout the portfolio of Alan Aya. His portfolio is bery professional, with slick color scheme, responsive design and informative. I "stole" most of his design and revamped it to suit my need. I still created everything from scratch with React though. 
 
 
 ## Getting Started
